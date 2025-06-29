@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: dark --default, light;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+  color-scheme: dark;
+
+  --color-base-100: #252734;
+  /* Background */
+  --color-base-content: #a9adb0;
+  /* Body text */
+  --color-primary: #252734;
+  /* Primary color */
+  --color-primary-content: #FFFFFF;
+  /* Titles, heading */
+  --color-secondary: #FFFFFF;
+  --color-secondary-content: #252734;
+  --color-accent: #a9adb0;
+  --color-accent-content: #252734;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  color-scheme: light;
+
+  --color-base-100: #FFFFFF;
+  --color-base-content: #252734;
+  --color-primary: #252734;
+  --color-primary-content: #FFFFFF;
+  --color-secondary: #252734;
+  --color-secondary-content: #FFFFFF;
+  --color-accent: #a9adb0;
+  --color-accent-content: #252734;
+}
+
+
+.signika-font {
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
+
+.li-style-arrow {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.li-style-arrow::before {
+  content: "➤"; /* তুমি চাইলে → বা অন্য arrow emoji ও দিতে পারো */
+  position: absolute;
+  left: 0;
+  color: #a7a7a7; /* টেইলউইন্ড: text-green-500 */
+}
