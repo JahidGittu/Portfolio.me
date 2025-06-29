@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {
     FaMapMarkerAlt,
     FaPhoneAlt,
@@ -6,6 +7,7 @@ import {
     FaPaperPlane,
     FaWhatsapp,
 } from "react-icons/fa";
+import { Bounce, toast, ToastContainer } from "react-toastify";
 
 const contactInfo = [
     {
@@ -26,10 +28,67 @@ const contactInfo = [
     },
 ];
 
-
 const ContactMe = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+        emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            form.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+            .then(
+                (result) => {
+                    toast('🦄 Email Sent Successful!', {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: false,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                        transition: Bounce,
+                    });
+                },
+                (error) => {
+                    toast.error('Email Sent Error!', {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: false,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                        transition: Bounce,
+                    });
+                    console.error(error.text);
+                }
+            );
+
+        e.target.reset();
+    };
+
     return (
         <section className="bg-base-100/90 text-white py-16 px-4">
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition={Bounce}
+            />
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-center text-3xl font-bold mb-10">
                     Contact With Me
@@ -51,30 +110,38 @@ const ContactMe = () => {
 
                     {/* Contact Form */}
                     <div className="md:col-span-2">
-                        <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <input
                                 type="text"
+                                name="from_name"
                                 placeholder="Your Name"
+                                required
                                 className="shadow-md text-secondary px-4 py-3 rounded-lg w-full border border-gray-700 focus:outline-none"
                             />
                             <input
                                 type="text"
+                                name="phone"
                                 placeholder="Your Phone"
                                 className="shadow-md text-secondary px-4 py-3 rounded-lg w-full border border-gray-700 focus:outline-none"
                             />
                             <input
                                 type="email"
+                                name="from_email"
                                 placeholder="Your Email"
+                                required
                                 className="shadow-md text-secondary px-4 py-3 rounded-lg w-full border border-gray-700 focus:outline-none"
                             />
                             <input
                                 type="text"
+                                name="subject"
                                 placeholder="Topic / Subject"
                                 className="shadow-md text-secondary px-4 py-3 rounded-lg w-full border border-gray-700 focus:outline-none"
                             />
                             <textarea
+                                name="message"
                                 placeholder="Your Message"
                                 rows="6"
+                                required
                                 className="shadow-md text-secondary px-4 py-3 rounded-lg w-full border border-gray-700 focus:outline-none md:col-span-2"
                             ></textarea>
                             <button
