@@ -23,6 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 
-
-Pages
-
+AboutMe
+ContactMe
+Education
+Experience
+Projects
+ShortSkills
+SkillsProficiency
+Testimonial
