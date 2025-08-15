@@ -9,18 +9,40 @@ import Experience from '../HomeComponents/Experience/Experience';
 import ContactMe from '../HomeComponents/ContactMe/ContactMe';
 import Projects from '../HomeComponents/Projects/Projects';
 
-
 const Home = () => {
     return (
         <div>
-            <Banner />
-            <ShortSkills />
-            <AboutMe />
-            <SkillsProficiency />
-            <Education />
-            <Projects />
-            <Experience />
-            <ContactMe />
+            <section id="home">
+                <Banner />
+            </section>
+
+            <section id="service">
+                <ShortSkills />
+            </section>
+
+            <section id="about">
+                <AboutMe />
+            </section>
+
+            <section id="skills-proficiency">
+                <SkillsProficiency />
+            </section>
+
+            <section id="education">
+                <Education />
+            </section>
+
+            <section id="projects">
+                <Projects />
+            </section>
+
+            <section id="experience">
+                <Experience />
+            </section>
+
+            <section id="contact">
+                <ContactMe />
+            </section>
         </div>
     );
 };
