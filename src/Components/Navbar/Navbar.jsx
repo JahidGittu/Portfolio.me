@@ -139,7 +139,7 @@ const Navbar = ({ onResumeClick }) => {
           onClick={onResumeClick}
           className="btn btn-sm md:btn-lg btn-outline border-accent rounded-full text-accent hover:bg-accent hover:text-base-100 transition-all duration-300 flex items-center gap-2"
         >
-          <HiOutlineViewfinderCircle />
+          <HiOutlineViewfinderCircle size={24} />
           Resume
         </button>
       </div>

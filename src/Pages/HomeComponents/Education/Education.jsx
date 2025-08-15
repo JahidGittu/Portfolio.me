@@ -31,7 +31,7 @@ const educations = [
 ];
 
 const Education = () => (
-  <section className="bg-base-100/90 mt-32 md:-mt-32 lg:-mt-32">
+  <section className="bg-base-100/90 mt-32 md:-mt-8 lg:-mt-32">
     <h2 className="text-2xl md:text-3xl font-bold text-secondary text-center flex items-center justify-center gap-2 md:gap-5 mb-10">
       <span>Educational Qualification</span>
       <FaUserGraduate />

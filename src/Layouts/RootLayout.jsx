@@ -13,9 +13,11 @@ const RootLayout = () => {
       <ParticleBg />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         <Navbar onResumeClick={() => setShowPreview(true)} />
+          
         <main>
-          <Outlet />
+          <Outlet context={{ setShowPreview }} />
         </main>
+
         <Footer />
         <Resume showPreview={showPreview} setShowPreview={setShowPreview} />
       </div>

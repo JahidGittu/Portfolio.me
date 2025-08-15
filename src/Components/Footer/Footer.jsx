@@ -1,7 +1,6 @@
 import React from "react";
 import {
   FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
   FaGithub,
 } from "react-icons/fa6";
@@ -12,15 +11,15 @@ const Footer = () => {
   return (
     <footer className="bg-base-100 text-base-content border-t border-accent/30 mt-20">
       <div className="container mx-auto px-4 py-12 flex flex-col md:flex-row justify-between gap-10">
+        
         {/* Logo & About */}
-        <div className="flex flex-col gap-4 md:w-1/3">
+        <div className="flex flex-col gap-4 md:w-1/3 text-center md:text-left">
           <h2 className="text-2xl font-bold text-secondary">Jahid Hossen</h2>
           <p className="text-accent">
             Full Stack Web Developer creating responsive, modern, and
-            user-friendly websites & apps. Let’s build something amazing
-            together.
+            user-friendly websites & apps. Let’s build something amazing together.
           </p>
-          <div className="flex gap-4 mt-2">
+          <div className="flex justify-center md:justify-start gap-4 mt-2">
             <a
               href="https://www.facebook.com/Mohammad.Jahid.Hossen.fb"
               target="_blank"
@@ -49,7 +48,7 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div className="flex flex-col gap-2 md:w-1/3">
+        <div className="flex flex-col gap-2 md:w-1/3 text-center md:text-left">
           <h3 className="text-xl font-semibold text-secondary mb-2">
             Quick Links
           </h3>
@@ -93,11 +92,14 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="flex flex-col gap-2 md:w-1/3">
+        <div className="flex flex-col gap-2 md:w-1/3 text-center md:text-left">
           <h3 className="text-xl font-semibold text-secondary mb-2">Contact</h3>
           <p className="text-accent">
             Email:{" "}
-            <a href="mailto:jahid.hossen.me@gmail.com" className="hover:text-secondary">
+            <a
+              href="mailto:jahid.hossen.me@gmail.com"
+              className="hover:text-secondary"
+            >
               jahid.hossen.me@gmail.com
             </a>
           </p>
@@ -107,7 +109,9 @@ const Footer = () => {
               +8801640726858
             </a>
           </p>
-          <p className="text-accent">Location: Raipur, Lakshmipur, Bangladesh</p>
+          <p className="text-accent">
+            Location: Raipur, Lakshmipur, Bangladesh
+          </p>
         </div>
       </div>
     </footer>

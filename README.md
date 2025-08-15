@@ -1,12 +1,57 @@
-# React + Vite
+# 💻 Jahid Hossen Portfolio Website | ব্যক্তিগত পোর্টফোলিও ওয়েবসাইট
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **portfolio website** showcasing the projects, skills, and professional journey of **Jahid Hossen**, a Full Stack Web Developer.  
+একটি আধুনিক এবং রেসপন্সিভ পোর্টফোলিও ওয়েবসাইট যা **জাহিদ হোসেন** এর প্রজেক্ট, স্কিল এবং প্রফেশনাল যাত্রা প্রদর্শন করে।
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
+[Visit My Portfolio](#)  
+(Replace `#` with your live deployment link)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📝 Overview | প্রজেক্ট পরিচিতি
+This portfolio website features:  
+- Personal introduction and banner section  
+- Skills and proficiency showcase  
+- Projects and experience highlights  
+- Contact form for hiring or inquiries  
+- Responsive design for mobile, tablet, and desktop  
+
+এই পোর্টফোলিও ওয়েবসাইটে রয়েছে:  
+- পার্সোনাল পরিচিতি এবং ব্যানার সেকশন  
+- স্কিল ও প্রফিসিয়েন্সি প্রদর্শন  
+- প্রজেক্ট এবং অভিজ্ঞতার হাইলাইট  
+- হায়ারিং বা যোগাযোগের জন্য কন্টাক্ট ফর্ম  
+- মোবাইল, ট্যাবলেট এবং ডেস্কটপের জন্য রেসপন্সিভ ডিজাইন  
+
+---
+
+## ⚡ Features | ফিচারসমূহ
+- **Interactive UI/UX** with smooth animations using **Framer Motion**  
+- **Resume preview** modal for quick download  
+- **Smooth scroll navigation** to different sections  
+- **Social media integration** (GitHub, LinkedIn, Facebook)  
+- Fully **mobile responsive** design  
+
+- **ইন্টারেক্টিভ UI/UX** ফ্রেমার মোশন ব্যবহার করে  
+- **রিজিউম প্রিভিউ** মডাল দ্রুত ডাউনলোডের জন্য  
+- **স্মুথ স্ক্রল** বিভিন্ন সেকশনে নেভিগেশনের জন্য  
+- **সোশ্যাল মিডিয়া ইন্টিগ্রেশন** (GitHub, LinkedIn, Facebook)  
+- সম্পূর্ণ **মোবাইল রেসপন্সিভ** ডিজাইন  
+
+---
+
+## 🛠️ Tech Stack | প্রযুক্তি
+- **Frontend:** React, TailwindCSS, Framer Motion  
+- **Icons & Graphics:** React Icons, Custom SVGs  
+- **Routing:** React Router v6  
+- **Other:** React Scroll, Responsive Design  
+
+- **ফ্রন্টএন্ড:** React, TailwindCSS, Framer Motion  
+- **আইকন ও গ্রাফিক্স:** React Icons, Custom SVGs  
+- **রাউটিং:** React Router v6  
+- **অন্যান্য:** React Scroll, Responsive Design  
+
+---

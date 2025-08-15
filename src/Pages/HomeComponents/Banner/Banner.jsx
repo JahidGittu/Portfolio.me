@@ -9,6 +9,7 @@ import myImg from "../../../assets/mj.jpg";
 import githubImg from "../../../assets/Social-Icons/GitHub.png";
 import linkedinImg from "../../../assets/Social-Icons/LinkdinIMG.png";
 import facebookImg from "../../../assets/Social-Icons/Facebook.png";
+import { HiOutlineViewfinderCircle } from "react-icons/hi2";
 
 const socialLinks = [
   { img: githubImg, url: "https://github.com/JahidGittu", bg: "bg-gray-800" },
@@ -24,7 +25,7 @@ const socialLinks = [
   },
 ];
 
-const Banner = () => {
+const Banner = ({ onResumeClick }) => {
   return (
     <motion.section
       className="text-base-content"
@@ -67,13 +68,15 @@ const Banner = () => {
             >
               <LiaHireAHelper size={20} /> Hire Me
             </a>
-            <a
-              href="/resume.pdf"
-              download
-              className="btn btn-outline border-accent text-accent rounded-full hover:bg-accent hover:text-base-100 transition flex items-center gap-2"
-            >
-              <FaDownload /> Resume
-            </a>
+            <div className="navbar-end">
+              <button
+                onClick={onResumeClick}
+                className="btn btn-sm md:btn-lg btn-outline border-accent rounded-full text-accent hover:bg-accent hover:text-base-100 transition-all duration-300 flex items-center gap-2"
+              >
+                <HiOutlineViewfinderCircle size={24} />
+                Resume
+              </button>
+            </div>
           </div>
         </motion.div>
 
