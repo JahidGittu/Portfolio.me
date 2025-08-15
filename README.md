@@ -1,12 +1,12 @@
-# 💻 Jahid Hossen Portfolio Website | ব্যক্তিগত পোর্টফোলিও ওয়েবসাইট
+# 💻 Jahid Hossen Portfolio Website
 
-A modern and responsive **portfolio website** showcasing the projects, skills, and professional journey of **Jahid Hossen**, a Full Stack Web Developer.  
-একটি আধুনিক এবং রেসপন্সিভ পোর্টফোলিও ওয়েবসাইট যা **জাহিদ হোসেন** এর প্রজেক্ট, স্কিল এবং প্রফেশনাল যাত্রা প্রদর্শন করে।
+A modern and responsive **portfolio website** showcasing the projects, skills, and professional journey of **me**, a Full Stack Web Developer.  
+একটি আধুনিক এবং রেসপন্সিভ পোর্টফোলিও ওয়েবসাইট যা **আমার** এর প্রজেক্ট, স্কিল এবং প্রফেশনাল যাত্রা প্রদর্শন করে।
 
 ---
 
 ## 🌐 Live Demo
-[Visit My Portfolio](#)  
+[Visit My Portfolio](https://jahidgittu-portfolio.web.app/)  
 (Replace `#` with your live deployment link)
 
 ---
@@ -55,3 +55,12 @@ This portfolio website features:
 - **অন্যান্য:** React Scroll, Responsive Design  
 
 ---
+
+
+👨‍💻 Developer Info | ডেভেলপার তথ্য </br>
+ => Developed by: Jahid Hossen </br>
+🌐 GitHub: [JahidGittu](https://github.com/JahidGittu) </br>
+🌍 Portfolio: <a href="http://jahid-portfolio.surge.sh/" target="_blank">jahidgittu.dev</a> </br>
+✉️ Email: jahid.hossen.me@gmail.com </br>
+📍 Location: Lakshmipur, Bangladesh
+
