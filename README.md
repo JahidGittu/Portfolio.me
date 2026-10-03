@@ -8,7 +8,9 @@ A modern, high-performance, and responsive **portfolio website** built with **Ne
 
 ## 🌐 Live Demo & Deployment
 
-This project is fully optimized for one-click deployment on **[Vercel](https://vercel.com/)**.
+🚀 **Live Website:** [https://jahid-codegittu.vercel.app](https://jahid-codegittu.vercel.app/)
+
+This project is deployed on **[Vercel](https://vercel.com/)**.
 
 ### Deploy to Vercel:
 1. Push your repository to GitHub.
@@ -83,6 +85,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ## 👨‍💻 Developer Info | ডেভেলপার তথ্য
 
 - **Developer:** Jahid Hossen (Code Gittu)
+- **Portfolio:** [https://jahid-codegittu.vercel.app](https://jahid-codegittu.vercel.app/)
 - **GitHub:** [@JahidGittu](https://github.com/JahidGittu)
 - **LinkedIn:** [jahid-hossen](https://linkedin.com/in/jahid-hossen)
 - **Email:** [jahid.hossen.me@gmail.com](mailto:jahid.hossen.me@gmail.com)
