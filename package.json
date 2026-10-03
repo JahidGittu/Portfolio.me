@@ -1,13 +1,12 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -15,32 +14,31 @@
     "@react-pdf-viewer/default-layout": "^3.12.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
-    "firebase": "^12.1.0",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.19.2",
+    "next": "^15.3.3",
     "pdfjs-dist": "^3.11.174",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-fast-marquee": "^1.6.5",
     "react-icons": "^5.5.0",
-    "react-modal": "^3.16.3",
-    "react-pdf": "^10.0.1",
     "react-scroll": "^1.9.3",
     "react-toastify": "^11.0.5",
-    "swiper": "^11.2.10"
+    "swiper": "^11.2.10",
+    "zustand": "^5.0.5"
   },
   "devDependencies": {
-    "@eslint/js": "^9.29.0",
-    "@tailwindcss/vite": "^4.1.11",
+    "@eslint/compat": "^2.1.1",
+    "@eslint/eslintrc": "^3.3.7",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^22.15.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.5.2",
+    "@types/react-scroll": "^1.8.10",
     "daisyui": "^5.0.43",
     "eslint": "^9.29.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.2.0",
-    "react-router": "^7.6.3",
+    "eslint-config-next": "^15.3.3",
     "tailwindcss": "^4.1.11",
-    "vite": "^7.0.0"
+    "typescript": "^5.8.3"
   }
 }

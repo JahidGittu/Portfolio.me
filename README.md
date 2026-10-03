@@ -1,66 +1,89 @@
 # 💻 Jahid Hossen Portfolio Website
 
-A modern and responsive **portfolio website** showcasing the projects, skills, and professional journey of **me**, a Full Stack Web Developer.  
-একটি আধুনিক এবং রেসপন্সিভ পোর্টফোলিও ওয়েবসাইট যা **আমার** এর প্রজেক্ট, স্কিল এবং প্রফেশনাল যাত্রা প্রদর্শন করে।
+A modern, high-performance, and responsive **portfolio website** built with **Next.js (App Router)**, **TypeScript**, **TailwindCSS v4**, and **Zustand** showcasing the projects, skills, and professional journey of Jahid Hossen (Code Gittu), Full Stack Web Developer.
+
+একটি আধুনিক, দ্রুত এবং সম্পূর্ণ রেসপন্সিভ পোর্টফোলিও ওয়েবসাইট যা **Next.js**, **TypeScript**, **TailwindCSS v4**, এবং **Zustand** দিয়ে নির্মিত।
 
 ---
 
-## 🌐 Live Demo
-[Visit My Portfolio](https://jahidgittu-portfolio.web.app/)  
-(Replace `#` with your live deployment link)
+## 🌐 Live Demo & Deployment
+
+This project is fully optimized for one-click deployment on **[Vercel](https://vercel.com/)**.
+
+### Deploy to Vercel:
+1. Push your repository to GitHub.
+2. Import the repository in Vercel.
+3. Configure the environment variables (see below).
+4. Click **Deploy**.
 
 ---
 
-## 📝 Overview | প্রজেক্ট পরিচিতি
-This portfolio website features:  
-- Personal introduction and banner section  
-- Skills and proficiency showcase  
-- Projects and experience highlights  
-- Contact form for hiring or inquiries  
-- Responsive design for mobile, tablet, and desktop  
+## 🛠️ Modern Tech Stack | প্রযুক্তি
 
-এই পোর্টফোলিও ওয়েবসাইটে রয়েছে:  
-- পার্সোনাল পরিচিতি এবং ব্যানার সেকশন  
-- স্কিল ও প্রফিসিয়েন্সি প্রদর্শন  
-- প্রজেক্ট এবং অভিজ্ঞতার হাইলাইট  
-- হায়ারিং বা যোগাযোগের জন্য কন্টাক্ট ফর্ম  
-- মোবাইল, ট্যাবলেট এবং ডেস্কটপের জন্য রেসপন্সিভ ডিজাইন  
+- **Framework:** Next.js 15 (App Router, Turbopack)
+- **Language:** TypeScript 5.8 (Strict Mode throughout)
+- **State Management:** Zustand 5 (Global store for modal & UI states)
+- **Styling:** TailwindCSS v4 + DaisyUI v5 (Theme-driven, CSS-first architecture)
+- **Animations:** Framer Motion 12, Swiper 11, React Fast Marquee
+- **Particles:** @tsparticles/react & @tsparticles/slim
+- **Email Service:** EmailJS Browser SDK
+- **Icons:** React Icons (Hi2, Fa6, Si)
+- **Notifications:** React Toastify
 
 ---
 
 ## ⚡ Features | ফিচারসমূহ
-- **Interactive UI/UX** with smooth animations using **Framer Motion**  
-- **Resume preview** modal for quick download  
-- **Smooth scroll navigation** to different sections  
-- **Social media integration** (GitHub, LinkedIn, Facebook)  
-- Fully **mobile responsive** design  
 
-- **ইন্টারেক্টিভ UI/UX** ফ্রেমার মোশন ব্যবহার করে  
-- **রিজিউম প্রিভিউ** মডাল দ্রুত ডাউনলোডের জন্য  
-- **স্মুথ স্ক্রল** বিভিন্ন সেকশনে নেভিগেশনের জন্য  
-- **সোশ্যাল মিডিয়া ইন্টিগ্রেশন** (GitHub, LinkedIn, Facebook)  
-- সম্পূর্ণ **মোবাইল রেসপন্সিভ** ডিজাইন  
-
----
-
-## 🛠️ Tech Stack | প্রযুক্তি
-- **Frontend:** React, TailwindCSS, Framer Motion  
-- **Icons & Graphics:** React Icons, Custom SVGs  
-- **Routing:** React Router v6  
-- **Other:** React Scroll, Responsive Design  
-
-- **ফ্রন্টএন্ড:** React, TailwindCSS, Framer Motion  
-- **আইকন ও গ্রাফিক্স:** React Icons, Custom SVGs  
-- **রাউটিং:** React Router v6  
-- **অন্যান্য:** React Scroll, Responsive Design  
+- **100% TypeScript**: Fully typed codebase with zero `any` compromises.
+- **Zustand State Management**: Decoupled, high-performance reactive store for modal state without prop drilling.
+- **Zero Firebase Dependency**: Fully independent, ready for instant Vercel edge deployment.
+- **Interactive UI/UX**: Smooth micro-animations with Framer Motion, dynamic particle background, and infinite marquee.
+- **Embedded Resume Preview**: In-app PDF preview modal with direct download capabilities.
+- **Contact Form**: Direct email sending powered by EmailJS with real-time toast notifications.
+- **Interactive Location Map**: Interactive modal showcasing location via Google Maps.
+- **Project Showcase**: Touch-friendly carousel slider powered by Swiper for multi-image project highlights.
+- **SEO & Performance Optimized**: Metadata tags, open graph definitions, responsive font loading, and server-side optimization.
 
 ---
 
+## 🔧 Environment Variables
 
-👨‍💻 Developer Info | ডেভেলপার তথ্য </br>
- => Developed by: Jahid Hossen </br>
-🌐 GitHub: [JahidGittu](https://github.com/JahidGittu) </br>
-🌍 Portfolio: <a href="http://jahid-portfolio.surge.sh/" target="_blank">jahidgittu.dev</a> </br>
-✉️ Email: jahid.hossen.me@gmail.com </br>
-📍 Location: Lakshmipur, Bangladesh
+Create a `.env.local` file in the root directory and configure your EmailJS keys:
 
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id_here
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id_here
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key_here
+```
+
+Refer to `.env.example` for details.
+
+---
+
+## 🚀 Getting Started Locally
+
+```bash
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 👨‍💻 Developer Info | ডেভেলপার তথ্য
+
+- **Developer:** Jahid Hossen (Code Gittu)
+- **GitHub:** [@JahidGittu](https://github.com/JahidGittu)
+- **LinkedIn:** [jahid-hossen](https://linkedin.com/in/jahid-hossen)
+- **Email:** [jahid.hossen.me@gmail.com](mailto:jahid.hossen.me@gmail.com)
+- **Location:** Raipur, Lakshmipur, Bangladesh
